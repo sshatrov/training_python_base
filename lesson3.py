@@ -30,6 +30,8 @@ for word in word_list_lemma:
 # 5) вывести 5 наиболее часто встречающихся слов (sort), вывести количество разных слов в тексте (set).
 word_list_sorted = list(word_dict.items())
 word_list_sorted.sort(key=lambda word: word[1])
-# word_list_top5
+
+word_set = set(word_list_lemma)
 
 print("Пять наиболее встречаемых слов:",*word_list_sorted[-5:])
+print("Количестве разных слов в тексте:",len(word_set))
